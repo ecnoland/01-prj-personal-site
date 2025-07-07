@@ -1,1 +1,108 @@
-/* Add you CSS here */
+/* Reset some default browser styles for consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styling for the entire page */
+body {
+  font-family: Arial, sans-serif; /* Simple, readable font */
+  line-height: 1.6; /* Makes text easier to read */
+  color: #333; /* Dark gray text color */
+  background-color: #f4f4f4; /* Light gray background */
+}
+
+/* Hero Section - The main banner at the top */
+.hero {
+  background-color: #2c3e50; /* Dark blue-gray background */
+  color: white; /* White text on dark background */
+  text-align: center; /* Center all text */
+  padding: 80px 20px; /* Space around the content */
+}
+
+/* Main heading in hero section */
+.hero h1 {
+  font-size: 3em; /* Large text size */
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+/* Subtitle in hero section */
+.hero p {
+  font-size: 1.2em; /* Slightly larger than normal text */
+  font-weight: 300; /* Lighter font weight */
+}
+
+/* Bio Section - About me information */
+.bio {
+  background-color: white; /* White background */
+  padding: 60px 20px; /* Space around the content */
+  text-align: center; /* Center the text */
+  max-width: 800px; /* Don't let it get too wide */
+  margin: 0 auto; /* Center the section on the page */
+}
+
+/* Heading in bio section */
+.bio h2 {
+  font-size: 2.5em; /* Large heading */
+  margin-bottom: 20px; /* Space below heading */
+  color: #2c3e50; /* Same color as hero background */
+}
+
+/* Paragraph text in bio section */
+.bio p {
+  font-size: 1.1em; /* Slightly larger text */
+  line-height: 1.8; /* Extra space between lines */
+  color: #666; /* Medium gray color */
+}
+
+/* Skills Section - List of abilities */
+.skills {
+  background-color: #ecf0f1; /* Very light gray background */
+  padding: 60px 20px; /* Space around the content */
+  text-align: center; /* Center everything */
+}
+
+/* Heading in skills section */
+.skills h2 {
+  font-size: 2.5em; /* Large heading */
+  margin-bottom: 30px; /* Space below heading */
+  color: #2c3e50; /* Consistent color scheme */
+}
+
+/* Skills list container */
+.skills ul {
+  list-style: none; /* Remove bullet points */
+  max-width: 600px; /* Don't let it get too wide */
+  margin: 0 auto; /* Center the list */
+}
+
+/* Individual skill items */
+.skills li {
+  background-color: white; /* White background for each skill */
+  margin: 10px 0; /* Space between skills */
+  padding: 15px 20px; /* Space inside each skill box */
+  border-radius: 5px; /* Slightly rounded corners */
+  font-size: 1.1em; /* Slightly larger text */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow effect */
+}
+
+/* Make the website look good on phones and tablets */
+@media (max-width: 768px) {
+  /* Smaller text on mobile devices */
+  .hero h1 {
+    font-size: 2.5em;
+  }
+  
+  .bio h2,
+  .skills h2 {
+    font-size: 2em;
+  }
+  
+  /* Less padding on mobile */
+  .hero,
+  .bio,
+  .skills {
+    padding: 40px 15px;
+  }
+}
